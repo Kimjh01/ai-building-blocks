@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-template-manager"
+version = "0.1.0"
+description = "Scaffold module for 03-prompt-template-manager"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic",
+    "python-dotenv",
+]
+
+# 추천 의존성: jinja2, pyyaml, pydantic-settings
+
+[tool.setuptools.packages.find]
+where = ["src"]

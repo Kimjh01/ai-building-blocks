@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-workflow"
+version = "0.1.0"
+description = "Scaffold module for 11-agent-workflow"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic",
+    "python-dotenv",
+]
+
+# 추천 의존성: openai, litellm, networkx
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recommendation-engine"
+version = "0.1.0"
+description = "Scaffold module for 10-recommendation-engine"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic",
+    "python-dotenv",
+]
+
+# 추천 의존성: pandas, scikit-learn, numpy
+
+[tool.setuptools.packages.find]
+where = ["src"]

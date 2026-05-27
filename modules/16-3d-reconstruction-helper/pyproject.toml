@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "3d-reconstruction-helper"
+version = "0.1.0"
+description = "Scaffold module for 16-3d-reconstruction-helper"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic",
+    "python-dotenv",
+]
+
+# 추천 의존성: opencv-python, numpy
+
+[tool.setuptools.packages.find]
+where = ["src"]

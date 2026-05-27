@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Data
+data/input/*
+data/output/*
+!data/input/.gitkeep
+!data/output/.gitkeep
+
+# Nested module data
+**/data/input/*
+**/data/output/*
+!**/data/input/.gitkeep
+!**/data/output/.gitkeep
+
+# Model files
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.bin
+*.safetensors
+
+# Vector DB
+chroma_db/
+faiss_index/
+**/chroma_db/
+**/faiss_index/
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+**/logs/
+**/*.log
+
+# Environment
+**/.env
+**/.venv/
+**/venv/
