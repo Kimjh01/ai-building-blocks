@@ -1,3 +1,3 @@
-from .main import MODULE_NAME, main
+from .main import MODULE_NAME, cli, main
 
-__all__ = ["MODULE_NAME", "main"]
+__all__ = ["MODULE_NAME", "cli", "main"]

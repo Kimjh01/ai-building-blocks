@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "llm-chat"
 version = "0.1.0"
-description = "Scaffold module for 01-llm-chat"
+description = "Minimal reusable LLM chat module"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

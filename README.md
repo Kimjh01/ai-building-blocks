@@ -141,27 +141,3 @@ api_key = get_env("OPENAI_API_KEY", default="")
 ```bash
 uv pip install -e ../../shared
 ```
-
-## 새 모듈 추가 규칙
-
-- 폴더명은 `번호-기능명` 형식을 따릅니다. 예: `18-new-ai-module`
-- 패키지명은 숫자와 하이픈을 제거하고 `snake_case`로 만듭니다.
-- 모든 모듈은 `README.md`, `pyproject.toml`, `run.py`, `src/`, `tests/`, `data/`, `notebooks/`를 포함합니다.
-- 공통 로직은 가능하면 모듈 내부에 복붙하지 말고 `shared/`로 올립니다.
-- 새 모듈은 아래 명령으로 생성합니다.
-
-```bash
-python scripts/create_module.py 18-new-ai-module
-```
-
-## Git에 올리면 안 되는 파일
-
-다음 항목은 `.gitignore`로 제외합니다.
-
-- `.env`, 모듈별 `.env`, 가상환경 폴더
-- 입력/출력 데이터, 생성 산출물, 실험 로그
-- 모델 파일(`.pt`, `.onnx`, `.ckpt`, `.bin`, `.safetensors`)
-- 벡터 DB 인덱스(`chroma_db/`, `faiss_index/`)
-- 캐시 디렉토리와 Jupyter 체크포인트
-
-실제 API 키, 실제 학습 데이터, 대용량 모델 파일은 절대 커밋하지 않는 것을 전제로 합니다.
